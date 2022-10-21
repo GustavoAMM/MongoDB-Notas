@@ -119,25 +119,34 @@ db.NameCollection.update({"algo":"algo"},{$rename:{"algo":"algo"}})
 ```
 > A diferencia del $set, el $rename cambiar el titulo de la propiedad no el atributo
 
-$ELiminar$
+### ELiminar
 
-eliminar un documenot db.NameCollection.remove({"algo":"algo"})
-#los parametros que recibe son para la busqueda del elemento a eliminar y aunque funciona el comando es mas nuevo el removeOne, removeMany
-para eliminar todos los documentos a la vez: db.NameCollection.remove({})
+Eliminar un documento: 
+```
+db.NameCollection.remove({"algo":"algo"})
+```
 
-para crear un backup de nuestra base de datos es:
+> Los parametros que recibe son para la busqueda del elemento a eliminar y aunque funciona el comando es mas nuevo el removeOne, removeMany.
 
+Para eliminar todos los documentos a la vez: 
+```
+db.NameCollection.remove({})
+```
+
+Para crear un backup de nuestra base de datos es:
+
+```
 mongodump
+```
 
-para restaurar: 
-
+Para restaurar: 
+```
 mongorestore
+```
 
+### Ejemplo para insertar varios:
 
-
-
-ejemplo para insertar varios:
-
+```
 db.productos.insert([
     {
         "nombre":"mouse",
@@ -162,3 +171,4 @@ db.productos.insert([
     }
     
 ])
+```
