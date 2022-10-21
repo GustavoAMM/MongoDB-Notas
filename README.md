@@ -31,14 +31,14 @@ Notas:
 >
 > Se pueden guardar listas e incluso objetos dentro del objetos
 
-"Base de datos"
+#### Base de datos
 
--ver base de datos: show dbs
--usar/crear una base de datos: use NameDB
-#Sí se crea una base de datos, pero no se genera ninguna colección dentro de ella, no se guarda#
--ver la base de datos actual: db
--eliminar base de datos: db.dropDatabase()
-#Se elimina la base de datos que se este usando, por eso siempre es recomendable ver cual es la base de datos actual
+Ver base de datos: `show dbs`
+usar/crear una base de datos: `use NameDB`
+> Sí se crea una base de datos, pero no se genera ninguna colección dentro de ella, no se guarda
+Ver la base de datos actual: `db`
+Eliminar base de datos: `db.dropDatabase()`
+> Se elimina la base de datos que se este usando, por eso siempre es recomendable ver cual es la base de datos actual
 
 
 "Colecciones"
