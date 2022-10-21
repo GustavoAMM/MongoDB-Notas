@@ -31,7 +31,7 @@ Notas:
 >
 > Se pueden guardar listas e incluso objetos dentro del objetos
 
-#### Base de datos
+### Base de datos
 
 Ver base de datos: `show dbs`
 
@@ -46,7 +46,7 @@ Eliminar base de datos: `db.dropDatabase()`
 > Se elimina la base de datos que se este usando, por eso siempre es recomendable ver cual es la base de datos actual
 
 
-#### Colecciones
+### Colecciones
 
 Ver las colecciones: `show collections`
 
@@ -56,19 +56,22 @@ Crear una colección: `db.CreateCollection("NameCollection")`
 
 Eliminar colecciones: `db.NameCollection.drop()`
 
-                                
-
-                              ===Documentos===
+## Documentos
 
 
-$insertar$
+### Insertar
 
--crear un documentos: db.NameCollection.insert({"nombre":"algo"})
-#se puede insertar un dato en una colección que no existe, MongoDB va a crear la colección por nosotros
--ver documentos dentro de las colecciones: db.NameCollection.find()
--ver documentos dentro de las colecciones BONITO: db.NameCollection.find().pretty()
--guardar varias documentos a la vez:
-#se puede guardar varias documentos a la vez, en un lugar de pasarle un objeot se puede pasar una lista de objetos
+Crear un documentos: `db.NameCollection.insert({"nombre":"algo"})`
+
+> Se puede insertar un dato en una colección que no existe, MongoDB va a crear la colección por nosotros.
+
+Ver documentos dentro de las colecciones: `db.NameCollection.find()`
+
+Ver documentos dentro de las colecciones $bonito$: `db.NameCollection.find().pretty()`
+
+Guardar varias documentos a la vez:
+
+> Se pueden guardar varios documentos a la vez, en un lugar de pasarle un objeto se puede pasar una lista de objetos.
 
 
 $Buscar$
