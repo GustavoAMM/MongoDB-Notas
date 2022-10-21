@@ -101,11 +101,23 @@ Actualizar un objetos:
 ```
 db.NameCollection.update({"algo":"algo"},{$set:{"algo"}:{"algo"}})
 ```
-> la funcion update recibe dos objetos, el primero es el filtro de busqueda y el seguno es la nueva informacion
-Insertar un objeto si no hay coincidencias: db.NameCollection.update({"algo":"algo"},{$set:{"algo":"algo"}},upsert:ture)
-Incrementar datos numeros : db.NameDocument.update({"algo":"algo"},{$inc:{"algo":0.1}})
-Renombrar un valor del documento: db.NameCollection.update({"algo":"algo"},{$rename:{"algo":"algo"}}) 
-> a diferencia del $set, el $rename cambiar el titolo de la propiedad no el atributo
+> La función update recibe dos objetos, el primero es el filtro de busqueda y el seguno es la nueva información.
+
+Insertar un objeto si no hay coincidencias: 
+```
+db.NameCollection.update({"algo":"algo"},{$set:{"algo":"algo"}},upsert:ture)
+```
+
+Incrementar datos numeros : 
+```
+db.NameDocument.update({"algo":"algo"},{$inc:{"algo":0.1}})
+```
+
+Renombrar un valor del documento: 
+```
+db.NameCollection.update({"algo":"algo"},{$rename:{"algo":"algo"}}) 
+```
+> A diferencia del $set, el $rename cambiar el titulo de la propiedad no el atributo
 
 $ELiminar$
 
