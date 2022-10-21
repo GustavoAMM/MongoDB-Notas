@@ -15,15 +15,21 @@ Es una base de datos de proposito general opensource NoSql que se enfoca en cant
 Esta orientada a documentos(datos) sin esquemas que nos permite ser escalada horizontalmente
 
 
-comandos
+## Comandos
 
 Notas:
--Mongo NO tiene estructura de una tabla como base de datos relacionales
--NameCollection = Es una variable en el texto, aquí va el nombre de la colección
--NameDB = Es una variable en el texto, aquí va el nombre de la Base de datos
--cuando se guarda una colección se genera un id, eso es por parte de mongodb
--mongodb modifica los datos para que el los entienda, por ejemplo el new date
-- se pueden guardar listas e incluso objetos dentro del objetos
+
+> Mongo NO tiene estructura de una tabla como base de datos relacionales
+>
+> NameCollection = Es una variable en este texto, aquí va el nombre de la colección
+>
+> NameDB = Es una variable en este texto, aquí va el nombre de la Base de datos
+>
+> Cuando se guarda una colección se genera un id, eso es por parte de mongodb
+>
+> Mongodb modifica los datos para que el los entienda, por ejemplo el new date
+>
+> Se pueden guardar listas e incluso objetos dentro del objetos
 
 "Base de datos"
 
