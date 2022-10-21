@@ -1,4 +1,19 @@
-MongoDB
+# Notas del curso de MongoDB
+
+> Domingo 25 de septiembre de 2022.
+>
+> Requisitos previos: Conceptos básicos de JavaScript
+>
+> By Gustavo Angel Montoya Martínez
+
+
+
+## ¿Qué es?
+
+Es una base de datos de proposito general opensource NoSql que se enfoca en cantidades grandes y rapidas de información.
+
+Esta orientada a documentos(datos) sin esquemas que nos permite ser escalada horizontalmente
+
 
 comandos
 
