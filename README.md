@@ -33,41 +33,71 @@ Notas:
 
 ### Base de datos
 
-Ver base de datos: `show dbs`
+Ver base de datos: 
+```
+show dbs
+```
 
-Usar/crear una base de datos: `use NameDB`
+Usar/crear una base de datos: 
+```
+use NameDB
+```
 
 > Sí se crea una base de datos, pero no se genera ninguna colección dentro de ella, no se guarda
 
-Ver la base de datos actual: `db`
+Ver la base de datos actual: 
+```
+db
+```
 
-Eliminar base de datos: `db.dropDatabase()`
+Eliminar base de datos: 
+```
+db.dropDatabase()
+```
 
 > Se elimina la base de datos que se este usando, por eso siempre es recomendable ver cual es la base de datos actual
 
 
 ### Colecciones
 
-Ver las colecciones: `show collections`
+Ver las colecciones: 
+```
+show collections
+```
 
-Crear una colección: `db.CreateCollection("NameCollection")`
+Crear una colección: 
+```
+db.CreateCollection("NameCollection")
+```
 
 > Tambien se pueden crear un colección insertando un documentos en una colección que no existe, MongoDB va a crear la colección por ti
 
-Eliminar colecciones: `db.NameCollection.drop()`
+Eliminar colecciones: 
+```
+db.NameCollection.drop()
+```
 
 ## Documentos
 
 
 ### Insertar
 
-Crear un documentos: `db.NameCollection.insert({"nombre":"algo"})`
+Crear un documentos: 
+```
+db.NameCollection.insert({"nombre":"algo"})
+```
 
 > Se puede insertar un dato en una colección que no existe, MongoDB va a crear la colección por nosotros.
 
-Ver documentos dentro de las colecciones: `db.NameCollection.find()`
+Ver documentos dentro de las colecciones: 
+```
+db.NameCollection.find()
+```
 
-Ver documentos dentro de las colecciones $bonito$: `db.NameCollection.find().pretty()`
+Ver documentos dentro de las colecciones $bonito$: 
+```
+db.NameCollection.find().pretty()
+```
 
 Guardar varias documentos a la vez:
 
@@ -76,24 +106,49 @@ Guardar varias documentos a la vez:
 
 ### Buscar
 
-Buscar documento: `db.NameCollection.find({"algo":"algo"})`
+Buscar documento: 
+```
+db.NameCollection.find({"algo":"algo"})
+```
 
-> Se pueden meter mas filtros por ejemplo: `db.NameCollection.find({"algo":"algo","algo2":"algo2","algo3":"algo3"})`
+> Se pueden meter mas filtros por ejemplo: 
+> ```
+> db.NameCollection.find({"algo":"algo","algo2":"algo2","algo3":"algo3"})
+> ```
 
-Buscar documentos **PERO** devuelve solo uno: `db.NameCollection.finOne({"algo":"algo"})`
+Buscar documentos **PERO** devuelve solo uno: 
+```
+db.NameCollection.finOne({"algo":"algo"})
+```
+
 > Te devuelve el primero 
 
-Buscar un documento **PERO** muestra datos especificos del objetos: `db.NameCollection.find({"algo":"algo"},{"name":1,"descripcion":1,"_id":0})`
+Buscar un documento **PERO** muestra datos especificos del objetos: 
+```
+db.NameCollection.find({"algo":"algo"},{"name":1,"descripcion":1,"_id":0})
+```
 
-Ordenar los resultados de la busqueda de documentos: `db.NameCollection.fin({"algo":"algo"}).sort({"name":1})`
+Ordenar los resultados de la busqueda de documentos: 
+```
+db.NameCollection.fin({"algo":"algo"}).sort({"name":1})
+```
 
-limitar el numero de resultado: `db.NameCollection.find({"algo":"algo"}).limit(2)`
+Limitar el numero de resultado: 
+```
+db.NameCollection.find({"algo":"algo"}).limit(2)
+```
 
-Contar cuantos documentos hay en una colección: `db.NameCollection.count()`
+Contar cuantos documentos hay en una colección: 
+```
+db.NameCollection.count()
+```
 
-> El comando sirve, pero es mas actaul db.NameCollection.countDocuments()
+> El comando sirve, pero es mas actaul `db.NameCollection.countDocuments()`
 
-Funciones en documentos: `db.NameCollection.find().forEach(productos=>print("Productos: "+ productos.nombre))`
+Funciones en documentos: 
+```
+db.NameCollection.find().forEach(productos=>print("Productos: "+ productos.nombre))
+```
 
 ### Actualizar
 
