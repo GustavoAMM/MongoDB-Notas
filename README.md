@@ -74,17 +74,26 @@ Guardar varias documentos a la vez:
 > Se pueden guardar varios documentos a la vez, en un lugar de pasarle un objeto se puede pasar una lista de objetos.
 
 
-$Buscar$
+### Buscar
 
-Buscar documento: db.NameCollection.find({"algo":"algo"})
-#se pueden meter mas filtros por ejemplo db.NameCollection.find({"algo":"algo","algo2":"algo2","algo3":"algo3"})
-BUscar documentos PERO devuelve solo uno: db.NameCollection.finOne({"algo":"algo"})#te devuelve el primero 
-BUscar un documento PERO muestra datos especificos del objetos:db.NameCollection.find({"algo":"algo"},{"name":1,"descripcion":1,"_id":0})
-Ordenar los resultados de la busqueda de documentos: db.NameCollection.fin({"algo":"algo"}).sort({"name":1})
-limitar el numero de resultado: db.NameCollection.find({"algo":"algo"}).limit(2)
-contar cuantos documentos hay en una colección: db.NameCollection.count()
-#el comando sirve, pero es mas actaul db.NameCollection.countDocuments()
-funciones en documentos: db.NameCollection.find().forEach(productos=>print("Productos: "+ productos.nombre))
+Buscar documento: `db.NameCollection.find({"algo":"algo"})`
+
+> Se pueden meter mas filtros por ejemplo: `db.NameCollection.find({"algo":"algo","algo2":"algo2","algo3":"algo3"})`
+
+Buscar documentos **PERO** devuelve solo uno: `db.NameCollection.finOne({"algo":"algo"})`
+> Te devuelve el primero 
+
+Buscar un documento **PERO** muestra datos especificos del objetos: `db.NameCollection.find({"algo":"algo"},{"name":1,"descripcion":1,"_id":0})`
+
+Ordenar los resultados de la busqueda de documentos: `db.NameCollection.fin({"algo":"algo"}).sort({"name":1})`
+
+limitar el numero de resultado: `db.NameCollection.find({"algo":"algo"}).limit(2)`
+
+Contar cuantos documentos hay en una colección: `db.NameCollection.count()`
+
+> El comando sirve, pero es mas actaul db.NameCollection.countDocuments()
+
+Funciones en documentos: `db.NameCollection.find().forEach(productos=>print("Productos: "+ productos.nombre))`
 
 $Actualizar$
 
