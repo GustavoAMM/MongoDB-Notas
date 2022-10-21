@@ -46,12 +46,15 @@ Eliminar base de datos: `db.dropDatabase()`
 > Se elimina la base de datos que se este usando, por eso siempre es recomendable ver cual es la base de datos actual
 
 
-"Colecciones"
+#### Colecciones
 
--ver las colecciones: show collections
--crear una colección: db.CreateCollection("NameCollection")
-#tambien se pueden crear un colección insertando un documentos en una colección que no existe, MongoDB va a crear la colección por ti
--eliminar colecciones: db.NameCollection.drop()
+Ver las colecciones: `show collections`
+
+Crear una colección: `db.CreateCollection("NameCollection")`
+
+> Tambien se pueden crear un colección insertando un documentos en una colección que no existe, MongoDB va a crear la colección por ti
+
+Eliminar colecciones: `db.NameCollection.drop()`
 
                                 
 
