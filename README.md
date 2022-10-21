@@ -143,7 +143,10 @@ Contar cuantos documentos hay en una colección:
 db.NameCollection.count()
 ```
 
-> El comando sirve, pero es mas actaul `db.NameCollection.countDocuments()`
+> El comando sirve, pero es mas actaul 
+> ```
+> db.NameCollection.countDocuments()
+> ```
 
 Funciones en documentos: 
 ```
